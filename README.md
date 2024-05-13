@@ -1,8 +1,8 @@
 # Updated for 2024
-This repo is a fork of the [original](https://github.com/cameronkruse/hacktheenvironment/tree/main) made by @cameronkruse. Edits were made as several software have updated, deprecated, or added to varying components of the project. Most notibly, the CV component now uses Picamera2 with OpenCV and Tensorflow Lite. Small changes were made to monitor setup to accomodate for the new Pi OS release. SSH is the recommended approach to interacting with the Pi. 
-On the hardware side, the hardware setup is also reorganized to add more guidance. Instead of the original camera -> BrainCraft HAT flow. The order is now Fan -> Camera -> Display Module as recommended by Adafruit. One additional materia (2 x 20 Socket Riser Header) is also added.
+This repo is a fork of the [original](https://github.com/cameronkruse/hacktheenvironment/tree/main) made by @cameronkruse. Edits were made as several software have since been updated, deprecated, or added to varying components of the project. Most notably, the CV component now uses Picamera2 with OpenCV and Tensorflow Lite to accomodate for the latest OS (Debian 12 Bookworm). Small code fixes were also made to the display setup. SSH is the recommended approach to interacting with the Pi. 
+On the hardware side, the setup is reorganized to add more guidance. Instead of the original camera -> BrainCraft HAT flow. The order is now Fan -> Camera -> Display Module as recommended by Adafruit. One additional material (2 x 20 Socket Riser Header) is also added.
 
-For any issues, please use the Issues tab. I will get back to you in a reasonable window!
+For any issues, please use the Issues tab. I will try to get back to you in a reasonable window!
 
 ## Original README Below
 # HackTheEnvironment
