@@ -1,3 +1,10 @@
+# Updated for 2024
+This repo is a fork of the [original](https://github.com/cameronkruse/hacktheenvironment/tree/main) made by @cameronkruse. Edits were made as several software have updated, deprecated, or added to varying components of the project. Most notibly, the CV component now uses Picamera2 with OpenCV and Tensorflow Lite. Small changes were made to monitor setup to accomodate for the new Pi OS release. SSH is the recommended approach to interacting with the Pi. 
+On the hardware side, the hardware setup is also reorganized to add more guidance. Instead of the original camera -> BrainCraft HAT flow. The order is now Fan -> Camera -> Display Module as recommended by Adafruit. One additional materia (2 x 20 Socket Riser Header) is also added.
+
+For any issues, please use the Issues tab. I will get back to you in a reasonable window!
+
+## Original README Below
 # HackTheEnvironment
 
 [@diegoleonbarido](https://github.com/diegoleonbarido) and I used the materials in this repo to run a three day hackathon for a group of high school students as a part of a summer program in Boston sponsored by Putney Student Travels. We've published them here for others to use and run similar events. If you want to use any of these materials for your event, feel free to fork this repo and customize for your needs. [The branch for the original event with team submissions is here.](https://github.com/cameronkruse/hacktheenvironment/tree/EndicottHack)
