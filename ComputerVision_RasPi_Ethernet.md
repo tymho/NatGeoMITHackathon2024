@@ -27,6 +27,8 @@
 - [Power supply compatible with Raspberry Pi 4](https://www.adafruit.com/product/4298)
 - [microSD card with adapter 16 GB](https://www.adafruit.com/product/2693)
 - [Micro SD Card Reader](https://www.adafruit.com/product/939) (optional)
+- Ethernet Cable
+- Ethernet to USB C Adapter
 - [USB C to USB A Adapter](https://www.adafruit.com/product/5030) (optional)
 - [Raspberry Pi Case](https://www.adafruit.com/product/4301)
 - [Camera Case](https://www.adafruit.com/product/3253)
@@ -40,6 +42,7 @@ _Goal: In this section we are installing an operating system on our Raspberry Pi
 
 - Computer
 - MicroSD card 16GB
+- Ethernet and Ethernet to USB-C adapter
 - Adaptor for microSD to your computer (usb-C port)
 - [Raspberry Pi 4](https://www.adafruit.com/product/4296)
 
@@ -54,7 +57,7 @@ _Goal: In this section we are installing an operating system on our Raspberry Pi
 - Click Next and then click edit settings
   ![alt_text](images/os-customisation-prompt.png)
 
-- Choose the options as detailed in the screenshot below. Note, you should choose your own username of the Pi, WiFi settings, and password. **Make sure you record your username and password down!**
+- Choose the options as detailed in the screenshot below. Note, you should choose your own username of the Pi and password. Unlike the example image, uncheck the "configure Wireless LAN" box **Make sure you record your hostname, username, and password down!**
 
   ![alt_text](images/image19.png)
 
@@ -72,34 +75,19 @@ _NOTE: In a classroom with many students we must turn the Pis one by one and see
 
 - [Visit the nmap install page here](https://nmap.org/download.html)
 
-0. Install nmap on your computer. nmap is a network sniffing tool for understanding network traffic. The goal is to identify the IP address of our raspberry PI.
+0. Go to "System Settings" on your laptop and click on "Network".
 
-1. First identify your own IP address. You can do this by holding on the “option” button on your Mac keyboard while clicking on the “wifi” button on your top menu. Write down the IP address that your computer is using. The first time you run nmap from your terminal make sure you do it without turning on your PI.
+1. Connect the Pi to your laptop via the ethernet cable and adapter.
 
-```bash
-nmap -sP <YOUR_IP_ADDRESS>/24
-nmap -sP 192.168.1.79/24
-```
+2. Ensure you see a new connection next to "Wifi" in "Network" that is may look something like "AX88179A".
 
-2. Now that you’ve seen the IP addresses that are in your network, turn on your PI and see if there is \_a new IP address. \_The new IP address will be the IP address that your PI is using. Note, if you don’t see a new IP address you might have to plug the SD card back on your computer and make sure that you’ve done all the steps in the previous section correctly. Once you identify it you’re going to want to ssh into it from your Mac’s terminal:
-
-```bash
-ssh <PI USERNAME>@<YOUR IP NETWORK>
-# for example
-ssh pi-name@192.168.1.90
-```
-
-3. Skip this step if you ssh'd into your Pi. If you don’t find your raspberry address here, or if it doesn’t work do:
+3. Now that you’ve connected your PI, it is time to access it via your laptop!
 
 ```bash
 ssh username@hostname.local
 ```
 
 4. Say "yes" and connect to the pi using the password you set earlier. If you are able to ssh then you’re connected to the internet!
-
-5. Copy and paste the IP address.
-6. Say “yes” and connect to the pi using the password you set earlier. If you are able to ssh then you’re connected to the internet!
-7. Write down your PI’s **IP address** somewhere safe, we’re going to use them later on in the tutorial.
 
 ### 2.3 Update/Upgrade
 1. Now that you are logged in, perform an update/update:
