@@ -1,4 +1,4 @@
-# Using Machine Learning and Cameras on the Edge for Conservation and Sustainability
+# Using Machine Learning and Cameras on the Edge
 
 ### This tutorial is a step step instruction manual on how to:
 
