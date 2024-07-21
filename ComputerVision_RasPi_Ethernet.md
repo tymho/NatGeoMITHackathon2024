@@ -487,6 +487,7 @@ The first step is to export your shiny new model. This makes it easy to transfer
 ![alt_text](images/image13.png)
 In the dialog that appears, choose **TensorFlow Lite** and choose either the **Quantized** or **Floating point** model conversion type, as shown below. Then, click **Download my model**. After a minute or two, your browser will save a `converted_savedmodel.zip` file.
 ![alt_text](images/image15.png)
+
 Now we’re running the model on the Pi. When you clicked the **Download my model** button in the last step, your browser should have saved a file called `converted_tflite.zip`. Now you need to place this on your Raspberry Pi.
 
 You can transfer the model to the Raspberry Pi using scp. Feel free to unzip the file and change the name of the model and label file to desired. Afterwards, open a new terminal on your mac and run:
